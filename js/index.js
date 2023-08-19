@@ -1,1 +1,6 @@
-console.log('connected')
+
+
+
+function clickByCard(target){
+    console.log('mar haba')
+}
