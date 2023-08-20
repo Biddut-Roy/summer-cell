@@ -35,7 +35,7 @@
             <h1 class="font-semibold text-4xl lg:py-4">Kitchenware</h1>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-2 lg:gap-2 md:px-4 lg:px-3">
                 <!-- card 1 -->
-                <div class="card lg:w-11/12 bg-base-100 shadow-xl">
+                <div onclick="clickByCard(this)" class="card lg:w-11/12 bg-base-100 shadow-xl">
                     <figure class="px-10 h-1/2 bg-slate-300">
                       <img src="./images/prod1.png" alt="product" class="rounded-xl" />
                     </figure>
@@ -52,7 +52,7 @@
                     </div>
                   </div>
                   <!-- card 2 -->
-                  <div class="card lg:w-11/12 bg-base-100 shadow-xl">
+                  <div onclick="clickByCard(this)" class="card lg:w-11/12 bg-base-100 shadow-xl">
                     <figure class="px-10 h-1/2 bg-slate-300">
                       <img src="./images/prod2.png" alt="product" class="rounded-xl" />
                     </figure>
@@ -69,7 +69,7 @@
                     </div>
                   </div>
                   <!-- card 3 -->
-                  <div class="card lg:w-11/12 bg-base-100 shadow-xl">
+                  <div onclick="clickByCard(this)" class="card lg:w-11/12 bg-base-100 shadow-xl">
                     <figure class="px-10 h-1/2 bg-slate-300">
                       <img src="./images/prod3.png" alt="product" class="rounded-xl" />
                     </figure>
@@ -209,17 +209,17 @@
             <div class="bg-white px-2  md:px-0 lg:px-3">
                 <h1 class="md:text-lg lg:text-2xl">Have coupon?</h1>
                 <input class="md:w-[50%] lg:px-2 bg-slate-200" type="text" name="" id="" placeholder="Coupon code">
-                <button class="text-white bg-pink-500 py-1 px-2 rounded-r-lg" disabled>Apply</button>
+                <button class="text-white bg-pink-500 py-1 px-2 rounded-r-lg pry-BTN" disabled>Apply</button>
             </div>
             <!-- total money -->
             <div class="bg-white py-4 px-2  md:px-0 lg:px-3 md:mt-2 lg:mt-3 md:p-2 lg:pt-3">
                 <!-- Click Product -->
-                <div>
+                <div id="product-name">
 
                 </div>
                 <!-- Product prices & discount -->
-                <div>
-                    <h1>Total price:</h1>
+                <div class="mt-2">
+                    <h1>Total price: <span id="total-prices">00.00</span>TK</h1>
                     <h2>Discount:</h2>
                     <h1>Total:</h1>
                 </div>
