@@ -44,6 +44,7 @@ function couponCode(){
     const discount = document.getElementById('total-discount');
     const mainTotal = document.getElementById('total');
     const couponValue = coupon.value;
+    coupon.value = ' ';
     if( couponValue === "SELL200"){
         const totalDiscount = (total * 20) / 100;
         discount.innerText = totalDiscount;
