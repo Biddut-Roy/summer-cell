@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script> 
 
 </head>
-<body class="relative">
+<body class="md:relative lg:relative">
     <header>
         <!-- start a banner section -->
         <div class=" flex flex-col-reverse md:flex-row lg:flex-row bg-[#F9F6E2]  w-full lg:justify-center pb-4">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </header>
-    <main class="bg-[#F8F8F8] ">
+    <main class="bg-[#F8F8F8] relative md:static lg:static ">
       <section class="w-11/12 mx-auto my-5 flex flex-col-reverse md:flex-row lg:flex-row">
        <div class="w-full md:w-9/12 lg:w-9/12">
          <!-- card section 1st-->
@@ -205,14 +205,14 @@
          </div>
        </div>
         <!-- Calculate section -->
-        <div class="w-11/12 md:w-1/4 lg:w-1/4 py-3 md:pt-16 lg:pt-16 md:mx-2 lg:mx-7 ">
-            <div class="bg-white px-2  md:px-0 lg:px-3">
+        <div class="w-11/12 mx-auto md:w-1/3 lg:w-1/4 py-3 md:pt-16 lg:pt-20 md:mx-2 lg:mx-7">
+            <div class="bg-white px-2 md:px-2 lg:px-3">
                 <h1 class="md:text-lg lg:text-2xl">Have coupon?</h1>
                 <input class="md:w-[50%] lg:px-2 bg-slate-200" type="text" name="" id="coupon" placeholder="Coupon code">
                 <button onclick="couponCode()" id="myButton"  class=" text-white bg-pink-500 py-1 px-2 rounded-r-lg" disabled>Apply</button>
             </div>
             <!-- total money -->
-            <div class="bg-white py-4 px-2  md:px-0 lg:px-3 md:mt-2 lg:mt-3 md:p-2 lg:pt-3">
+            <div class="bg-white py-4 px-2  md:px-2 lg:px-3 md:mt-2 lg:mt-3 md:p-2 lg:pt-3">
                 <!-- Click Product -->
                 <div id="product-name">
 
@@ -220,7 +220,7 @@
                 <!-- Product prices & discount -->
                 <div class="mt-2">
                     <h1>Total price: <span id="total-prices">00.00</span>TK</h1>
-                    <h2>Discount: <span id="total-discount">00.00</span>T</h2>
+                    <h2>Discount: <span id="total-discount">00.00</span>TK</h2>
                     <h1>Total: <span id="total">00.00</span>TK</h1>
                 </div>
                 <button onclick="purchasePop()" id="myButton1" class=" text-white bg-pink-500 py-1 md:px-2 lg:px-5 rounded-lg mt-2 md:mt-4 lg:mt-4" disabled>Make Purchase</button>
@@ -229,9 +229,9 @@
       </section>
       <!-- start a Bonus section -->
       <section id="hiddenPopup" class="absolute top-0 left-0 h-full w-full bg-gray-400 bg-opacity-60 " hidden>
-         <div class=" mx-auto w-1/4 h-[300px] bg-red-400 text-center absolute lg:top-[30%] lg:left-1/3">
+         <div class=" mx-auto w-[50%] md:w-[35%] lg:w-[40%] h-[300px] bg-red-400 text-center absolute top-[5%] left-[27%] md:top-[20%] lg:top-[30%] md:left-[31%] lg:left-1/3">
           <img class="mx-auto " src="./images/congo.png" alt="">
-          <p class="text-5xl my-2 font-semibold">Congratulations</p>
+          <p class=" text-2xl md:text-3xl lg:text-5xl my-2 font-semibold">Congratulations</p>
           <p class=" mb-1">Your Purchase the product</p>
           <button onclick="home()" class=" text-white bg-pink-500 py-1 md:px-2 lg:px-2 rounded-lg mt-2 md:mt-2 lg:mt-2">Go Home</button>
          </div>
