@@ -63,12 +63,23 @@ function purchase(primaryBtn1){
      }
 }
 
-function home(){
-    location.href = "index.html";
-}
+
 function purchasePop(){
     const hiddenPopup = document.getElementById('hiddenPopup');
     hiddenPopup.removeAttribute('hidden');
+}
+function home(){
+    // location.href = "index.html";       
+    const hiddenPopups = document.getElementById('hiddenPopup');
+    const mainTotalReset = document.getElementById('total');
+    const totalPricesReset = document.getElementById('total-prices');
+    const discountReset = document.getElementById('total-discount');
+    const productNameAddReset = document.getElementById('product-name');
+    hiddenPopups.setAttribute("hidden", true);
+    totalPricesReset.innerText = "00.00";
+    mainTotalReset.innerText = "00.00";
+    discountReset.innerText = "00.00";
+    productNameAddReset.innerHTML =' ';
 }
 
 
